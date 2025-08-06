@@ -4,5 +4,69 @@ format: html
 editor: visual
 ---
 
-#### Lets goooo vectors ####
+#### Lets goooo vectors
+```{r}
+pacman::p_load("tidyverse")
+```
+
+We are going to create and store a vector
+
+```{r}
+marmots = c("blue", "green", 4, "yellow")
+marmots
+```
+lets check the class
+
+```{r}
+class(marmots)
+```
+if all my values are number it will turn numeric 
+
+```{r}
+pika = c(12.4, 6.8, 2.9, 8.8, 5) 
+pika
+```
+lets check the class
+
+```{r}
+class(pika)
+```
+
+If the values are integers you can do that too 
+
+```{r}
+bear = c(20L, 10L, 5L, 30L, 18L)
+bear
+
+#Lets Check
+
+class(bear)
+```
+
+#### Adding Vectors
+
+```{r}
+#create some vectors 
+ringtail= c(4.3, 8.9, 2.6, 7.1)
+fox = c(9.0, 12.5, 5.4, 10.9)
+
+#Now we add
+
+ringtail+fox
+
+#And subtract 
+fox-ringtail
+```
+We can also add scalar multipliers and find the dot product
+
+```{r}
+#Multiplier
+100*ringtail
+
+#and dot product using %*%
+ringtail%*%fox
+
+#cool
+
+```
 
